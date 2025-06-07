@@ -46,9 +46,8 @@ Use the assets/ folder to test the app with example files:
 - sample_job_description.txt
 
 
-# Final Note
-This project demonstrates how Generative AI can enhance recruitment workflows by intelligently matching resumes to job descriptions. Designed for learning purposes, it’s lightweight, easy to run, and leverages modern tools like Streamlit and OpenAI’s GPT-4, making it ideal for showcasing AI prototyping skills with practical business relevance.
-
 # Screenshot
 ![AI_Job_Description_Analyzer](https://github.com/user-attachments/assets/06c671b1-a86b-4ed7-887d-51def36c2280)
 
+# Final Note
+This project demonstrates how Generative AI can enhance recruitment workflows by intelligently matching resumes to job descriptions. Designed for learning purposes, it’s lightweight, easy to run, and leverages modern tools like Streamlit and OpenAI’s GPT-4, making it ideal for showcasing AI prototyping skills with practical business relevance.
