@@ -1,0 +1,14 @@
+
+We are seeking a Generative AI Developer to join our AI team.
+
+Responsibilities:
+- Design RAG architectures using LLMs over large unstructured datasets.
+- Apply embedding and vector search methods.
+- Build prototypes using Streamlit and evolve into scalable systems.
+- Use Python, LangChain, LlamaIndex, FastAPI.
+- Deploy across Azure, AWS, or GCP.
+
+Must-Have Skills:
+- Python, LangChain, LlamaIndex, vector databases.
+- Cloud: Azure, AWS, or GCP.
+- Communication and collaboration skills.

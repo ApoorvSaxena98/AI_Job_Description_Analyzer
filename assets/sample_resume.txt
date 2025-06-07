@@ -1,0 +1,18 @@
+
+John Doe
+Python Developer | Data Analyst | GenAI Enthusiast
+
+Skills:
+- Python, Pandas, NumPy, Django, REST APIs
+- Data Analysis, Visualization, SQL, Streamlit
+- Git, HTML, CSS, JavaScript (basic)
+
+Projects:
+- Student Performance Tracker using Python & Django
+- AI Resume Matcher (in-progress)
+
+Education:
+- B.Tech in Computer Science
+
+Certifications:
+- Python for Data Science (Coursera)
