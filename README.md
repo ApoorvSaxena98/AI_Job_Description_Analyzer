@@ -44,3 +44,7 @@ Rename the `streamlit` folder to `.streamlit` before running the app.
 Use the assets/ folder to test the app with example files:
 - sample_resume.txt
 - sample_job_description.txt
+
+
+# Final Note
+This project demonstrates how Generative AI can enhance recruitment workflows by intelligently matching resumes to job descriptions. Designed for learning purposes, it’s lightweight, easy to run, and leverages modern tools like Streamlit and OpenAI’s GPT-4, making it ideal for showcasing AI prototyping skills with practical business relevance.
