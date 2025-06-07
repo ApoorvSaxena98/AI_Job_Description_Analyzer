@@ -13,13 +13,21 @@ A simple Streamlit-based web app that uses GPT-4 or GPT-3.5-turbo to determine w
 ## 📁 Project Structure
 AI-Job-Description-Analyzer/
 ├── app.py # Main Streamlit application
+
 ├── prompts.py # Prompt builder for GPT input
+
 ├── requirements.txt # Project dependencies
+
 ├── streamlit/ # 🔁 Rename to ".streamlit" (see note below)
+
 │ └── secrets.toml # OpenAI API key config (Enter your own api key)
+
 ├── assets/
+
 │ └── sample_job_description.txt # Example job description
+
 │ └── sample_resume.txt # Example resume for testing
+
 └── README.md # Project documentation
 
 **⚠️ IMPORTANT:**  
