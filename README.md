@@ -12,6 +12,7 @@ A simple Streamlit-based web app that uses GPT-4 or GPT-3.5-turbo to determine w
 
 ## 📁 Project Structure
 AI-Job-Description-Analyzer/
+
 ├── app.py # Main Streamlit application
 
 ├── prompts.py # Prompt builder for GPT input
@@ -28,6 +29,7 @@ AI-Job-Description-Analyzer/
 │ └── sample_resume.txt # Example resume for testing
 
 └── README.md # Project documentation
+
 
 **⚠️ IMPORTANT:**  
 Rename the `streamlit` folder to `.streamlit` before running the app.  
