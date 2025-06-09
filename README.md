@@ -1,4 +1,4 @@
-# 🧠 AI Job Description Analyzer
+# 🧠 AI Job Description Analyzer (Using GPT)
 A simple Streamlit-based web app that uses GPT-4 or GPT-3.5-turbo to determine whether a resume and job description match the requirements of the position, and it offers recommendations for improvement. Ideal for job seekers and HR professionals.
 
 ---
