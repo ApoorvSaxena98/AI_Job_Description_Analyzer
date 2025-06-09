@@ -1,21 +1,19 @@
 import streamlit as st
-import openai
+import google.generativeai as genai
 from prompts import get_analysis_prompt
 
-# Set up OpenAI API Key (for local testing you can hardcode it here)
-openai.api_key = st.secrets["OPENAI_API_KEY"] # API Key will be fetched from ".streamlit/secrets.toml"
+# Load Gemini API key from .streamlit/secrets.toml
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
+# Initialize Gemini model
+model = genai.GenerativeModel("gemini-2.0-flash-001")
 
+# Page configuration
 st.set_page_config(page_title="AI Job Description Analyzer", layout="centered")
-
 st.title("📄 AI Job Description Analyzer")
-st.write("Compare your resume with a job description using GPT-4.")
+st.write("Compare your resume with a job description using Gemini AI (Google).")
 
-
-# User Inputs
-#jd_input = st.text_area("📝 Paste Job Description Here", height=200, placeholder="Copy and paste the job description...")
-#resume_input = st.text_area("📄 Paste Resume Text Here", height=200, placeholder="Paste your resume content...")
-
+# Layout: 2 input columns
 col1, col2 = st.columns(2)
 
 with col1:
@@ -25,25 +23,23 @@ with col2:
     resume_input = st.text_area("📝 Resume", height=350, placeholder="Paste or write your resume here...")
 
 
-# Analyze Button
+# Analyze Button in the center
 col_center = st.columns(3)
 with col_center[1]:
     analyze_clicked = st.button("🔍 Analyze Match")
 
-
+# On button click
 if analyze_clicked:
     if not jd_input or not resume_input:
         st.warning("Please provide both job description and resume.")
     else:
-        with st.spinner("Analyzing using GPT..."):
+        with st.spinner("Analyzing using Gemini..."):
             prompt = get_analysis_prompt(jd_input, resume_input)
+            
             try:
-                response = openai.ChatCompletion.create(
-                    model="gpt-4",  # Use "gpt-3.5-turbo" if no access to GPT-4
-                    messages=[{"role": "user", "content": prompt}]
-                )
-                output = response['choices'][0]['message']['content'] # For older version
-                #output = response.choices[0].message.content # For version > 1.0.0
-                st.markdown(output)
+           #     model = genai.GenerativeModel("gemini-2.0-flash-001")
+                response = model.generate_content(prompt)
+                st.markdown(response.text)
+                
             except Exception as e:
                 st.error(f"Error: {e}")

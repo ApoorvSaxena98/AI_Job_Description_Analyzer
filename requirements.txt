@@ -1,3 +1,6 @@
+#streamlit
+#openai
+
 streamlit
-openai
+google-generativeai
 
